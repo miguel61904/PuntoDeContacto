@@ -4,6 +4,11 @@
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 html, body{
     height: 100%;
     width: 100%;
@@ -82,22 +87,24 @@ input{
     display: flex;
     justify-self: center;
     align-self: center;
-    height: 50%;
+    height: 75%;
     width: 50%;
     overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 208, 208);
+    box-shadow: 5px 5px 10px 10px rgba(10, 43, 79, 0.2);
 }
 
 #modal nav{
     display: flex;
-    width: 100%;
     height: 8%;
-    justify-content: end;
-    margin-right: 16px;
+    justify-content: space-between;
+    margin: 10px;
     margin-bottom: 10px;
 }
 
 #modal nav button{
-    font-size: x-large;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -105,8 +112,9 @@ input{
     height: 92%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*cards Modal*/
@@ -118,4 +126,17 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#contDatos img{
+    height: 25%;
+    width: 20%;
+}
+
+#contDatos button{
+    background-color: rgba(111, 189, 67, 1);
+    border-radius: 10px;
+    width: 80%;
+    border: 1px solid rgb(209, 208, 208) ;
 }
