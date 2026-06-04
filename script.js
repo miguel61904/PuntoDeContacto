@@ -1,7 +1,11 @@
 let modal = document.getElementById("modal")
 let card1 = document.getElementById("card1")
+let card2 = document.getElementById("card2")
+let card3 = document.getElementById("card3")
 let cerrarModal = document.getElementById("cerrarModal")
+let cerrarModal3 = document.getElementById("cerrarModal3")
 let seccionModal= document.getElementById("seccionModal")
+let modalEnlaces = document.getElementById("modalEnlaces")
 
 let interArch = [
     {
@@ -45,6 +49,12 @@ let interArch = [
         nombre:"FreshService",
         descripcion: "Registro Equipos",
         descarga:"https://ucceduco-my.sharepoint.com/:f:/g/personal/miguel_francov_ucc_edu_co/IgDBATRWqbZvQbkaV8sebISBAamq0HNBpW8t8xmgcxpAeRI?e=QuMhMk?download=1"
+    },
+    {
+        img: "./assets/rufus.png",
+        nombre:"Rufus",
+        descripcion: "Imagen en Memoria",
+        descarga:"https://ucceduco-my.sharepoint.com/:f:/g/personal/miguel_francov_ucc_edu_co/IgDBATRWqbZvQbkaV8sebISBAamq0HNBpW8t8xmgcxpAeRI?e=QuMhMk?download=1"
     }
 ]
 
@@ -67,4 +77,14 @@ card1.addEventListener("click", () =>{
 cerrarModal.addEventListener("click", () =>{
     modal.close();
     modal.style.display = "none"
+})
+
+card3.addEventListener("click", () =>{
+    modalEnlaces.showModal();
+    modalEnlaces.style.display = "inline"
+})
+
+cerrarModal3.addEventListener("click", () =>{
+    modalEnlaces.close();
+    modalEnlaces.style.display = "none"
 })

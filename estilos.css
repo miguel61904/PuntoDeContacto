@@ -140,3 +140,65 @@ input{
     width: 80%;
     border: 1px solid rgb(209, 208, 208) ;
 }
+
+#modal{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 75%;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 208, 208);
+    box-shadow: 5px 5px 10px 10px rgba(10, 43, 79, 0.2);
+}
+/*nav modalEnlaces*/
+#modalEnlaces{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 75%;
+    width: 55%;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 208, 208);
+    box-shadow: 5px 5px 10px 10px rgba(10, 43, 79, 0.2);
+}
+
+#modalEnlaces nav{
+    display: flex;
+    height: 8%;
+    justify-content: space-between;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+#modalEnlaces nav button{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contDatosAc{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#contDatosAc a{
+    color: black;
+    text-decoration: underline 1px rgba(111, 189, 67, 1);
+}
+#enlaces{
+    margin-right: 20px;
+    margin-left: 5px;
+    border-right: 1px solid;
+    width: 20%;
+}
+#accesos{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: small;
+}
